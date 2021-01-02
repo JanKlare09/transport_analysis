@@ -314,7 +314,7 @@ results_2 = model_2.fit()
 
 
 
-### PART 5: RANDOM FOREST MODEL 1 ###
+### PART 6: RANDOM FOREST MODEL 1 ###
 
 # Define variables
 y_1 = np.array(data_shp['d_pc_2011'])
@@ -339,7 +339,7 @@ importance_1, importance_2, importance_3, score_list = zip(*[rf_model_1(seed) fo
 
 
 
-### PART 6: RANDOM FOREST MODEL 2 ###
+### PART 7: RANDOM FOREST MODEL 2 ###
 
 # Define variables
 y_2 = np.array(data_shp['PCU'])
@@ -364,7 +364,7 @@ importance_1, importance_2, importance_3, importance_4, score_list, oob_score_li
 
 
 
-### PART 7: CROSS-VALIDATION OF BOTH MODELS ###
+### PART 8: CROSS-VALIDATION OF BOTH MODELS ###
 
 # Cross-validation for GWR
 def get_folds (X,y,coords,fold, num_folds):
